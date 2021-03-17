@@ -1,199 +1,92 @@
 # Browser Technologies @cmda-minor-web 20-21
 
-//Robuuste, toegankelijke websites ontwerpen en maken …
-
-Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruik. [Het web is voor iedereen](https://www.youtube.com/watch?v=UMNFehJIi0E). Het is geen gecontroleerde (programmeer) omgeving, je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, kwaliteit van het netwerk en er zijn mensen, allemaal verschillende mensen ...
-
-In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
-
-## Opdrachten
-
-het vak bestaat uit 3 opdrachten. In week 1 werken we aan opdracht 1 en 2. Vanaf week 2 werken we aan de eindopdracht.
-
-### Opdracht 1 🛹 NPM install Progressive- enhancement
-
-Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
-
-- [Opdracht 1 - NPM install Progressive Enhancement](course/Opdracht1.md)
-
-### Opdracht 2 💔 Breek het Web
-
-Voor opdracht 2 ga je proberen het Web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken? 
-
-- [Opdracht 2 - Breek het Web](course/Opdracht2.md)
-
-### De eindopdracht ✨ Progressive Enhanced Browser Technologie
+## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 
 Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
 
-- [De eindopdracht - Progressive Enhanced Browser Technologie](course/Eindopdracht.md)
+-   [De eindopdracht - Progressive Enhanced Browser Technologie](course/Eindopdracht.md)
 
+## Mijn usecase
 
-### Leerdoelen
-- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
-- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
-- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._
+Ik kies voor de Enquete over de minor Web Development. Of in elk geval een enquete lijkt me leuk. Als het onderwerp anders mag zijn zou ik dat ook graag doen.
 
-[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/)
+## Live Demo
 
-## Planning & programma
+[Link naar live demo](http://mbergevoet.github.io/browser-technologies-2021)
 
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1](#week-1)  | Intro, College + briefing opdracht 1 | Presentaties opdracht 1, college +  briefing opdracht 2 | Presentaties opdracht 2 |
-| [Week 2](#week-2)  | College + Briefing De eindopdracht  | College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 3](#week-3)  | College + werken aan de opdracht  |  College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 4](#week-4)  | Beoordelingsgesprekken (Dinsdag en Woensdag) | Weekly Nerd | Goede vrijdag |
+## Vereisten
 
-### Week 1
+-   Studentgegevens (naam + nummer) verplicht
 
-Het web is voor iedereen: Deze week gaan we onderzoeken wat Progressive Enhancement is en kennismaken met testen ~~en het device lab~~.
+-   Per vak
 
-#### Woensdag 10 maart
+-   naam
+-   docent(en)
+-   weken waarin je het vak deed
+-   beoordeling op schaal 1-10 van
+-   lesstof (hoe moeilijk is het)
+-   uitleg (hoe duidelijk is het uitgelegd)
+-   eigen inzicht (hoe goed snap je het)
 
-Browser Technolgies begint op woensdag. In het eerste college krijg je uitleg over het programma en over het nut van Progressive Enancement. Wat is dat eigenlijk? De meeste CMD studenten hebben dit waarschijnlijk al eens gehoord en misschien iets mee gedaan in blok Tech. Progressive Enhancement, oftewel PE, is een manier hoe je je de code van een website kan bouwen zodat alle gebruikers met alle browsers je website zo goed mogelijk te zien krijgen. Met PE kun je robuuste websites bouwen die het altijd doen. PE is een manier van denken.
+-   Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
 
-| Woensdag 10/3 | Wat  |
-|---|---|
-| 9:30 | [College les 1 over het vak, wie, wat, waar en PE](course/BT2021-les1-progressive-enhancement.pdf)  |
-|  | [Briefing Opdracht 1 🛹 NPM install Progressive-Enhancement](course/Opdracht1.md) |
-| 16:00 | Checkout per team |
+-   Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
-##### Lezen voor les 1 📖
+## Schetsen & Features
 
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
+-   Er wordt een verschil gemaakt kunnen worden tussen een admin en een normale gebruiker
+-   De gebruiker kan een vraag een score geven van 1 tot 10
+-   De gebruiker kan door klikken naar de volgende vraag alleen als hij is ingevuld
+-   De gebruiker kan zien bij welke vraag hij is en hoe lang het dan nog duurt
+-   De gebruiker kan de enquete aan het einde kunnnen "versturen"
+-   De gebruiker kan de pagina refreshen waarbij de browser onthoudt bij welke vraag hij was gebleven
+-   De admin kan nieuwe vragen toevoegen
+-   De admin kan de nieuwe enquete opslaan
 
+![Enquete indeling](https://i.imgur.com/fZb7XEJ.jpg)
+De gebruiker kan een vraag invullen en klikken naar de volgende vraag. (functional)
+![Klaar scherm](https://i.imgur.com/mqc81qF.jpg)
+Na het invullen komt er een verstuurd of klaar pagina. (pleasurable)
+![Admin scherm](https://i.imgur.com/Xklxrzs.jpg)
+Dit is het overzicht dat de admin ziet en waar hij een nieuwe vraag kan toevoegen. (functional)
+![Inlog scherm](https://i.imgur.com/bS5jI0E.jpg)
+Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tussen normale gebruiker en admin. (pleasurable)
 
+## HTML elementen
 
+```html
+<form></form> <!-- Om de enquete in te vullen -->
 
-#### Donderdag 11 maart
+<label></label> <!-- Om de vragen te kunnen weergeven -->
 
-Donderdag gaan we in je Squad opdracht 1 bekijken en bespreken. Als het goed is heb je een beeld gevormd van Progressive Enhancement. Tijdens de bespreking kun je ook vragen te stellen, samen onderzoeken we wat PE is, waarom het goed is om te begrijpen en misschien kunnen we al wat voorbeelden bespreken hoe je het zou kunnen toepassen.
+<input type="required"></input> <!-- Om de gebruiker iets in te laten vullen en te checken of de vraag wel is ingevuld -->
 
-In het college krijg je uitleg over opdracht 2. Voor deze opdracht ga je proberen het web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
+<button type="submit"></button> <!-- Om door te gaan naar de volgende vraag -->
 
-🤟 Vandaag geeft [Aaron Gustafson](https://www.aaron-gustafson.com) een gast-college. hij schreef in 2008 het artikel [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) waarna deze manier van denken een belangrijk onderdeel werd van Web Development. Aaron Gustafson werkt bij Microsoft als 'web standard advocate' met het Edge browser team.
+<section></section> <!-- Om de verschillende vragen in weer te geven -->
 
-| Donderdag 11/3 | Wat  |
-|---|---|
-| 9:30 | Opdracht 1 bespreken in Squads 🛹 |
-| 10:30 | [College les 2 over Browser features](BT2021-les2-progressive-enhancement.pdf) |
-|  | [Briefing Opdracht 2 💔 Breek het web](course/Opdracht2.md) |
-| 16:00 | Checkout per team |
-| 18:00 | Gastcollege Aaron Gustafson 🤟 |
+<ul>
+    <li></li> <!-- Om de lijst met vragen aan de admin te laten zien -->
+</ul>
 
-Lezen voor les 2 📖
+```
 
-- [The unreasonable effectiveness of simple HTML by Terence Eden](https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/)
+## Mogelijke Browser Technologies
 
-#### Vrijdag 12 maart
+-   Web Storage/ Cookies
+-   Templates
+-   Drag and Drop
+-   Css Grid/ Flex
+-   Transitions/ Animations
+-   Forms
+-   Data posting
 
-Vrijdag bespreken we in clubjes opdracht 2. Zorg dat je de bevindingen van je onderzoek online kan presenteren. We gaan de hele feature lijst doorlopen en alle studenten kunnen laten zien wat ze hebben onderzocht, met voorbeelden, de problemen, cijfers en/of meningen. Bedenk ook hoe je de problemen zou kunnen oplossen.
+## Browsers waarin ik ga testen
 
-| Vrijdag 12/3 | Wat  |
-|---|---|
-| 11:30 | Opdracht 2 bespreken in team A 💔 |
-| 13:00 | Opdracht 2 bespreken in team B 💔 |
-| 14:30 | Opdracht 2 bespreken in team C 💔 |
-| 16:00 | Work Hard Play Hard |
-
-### Week 2
-
-In week 2 beginnen we met de eindopdracht. We hebben in week 1 onderzocht wat PE is en welke feautures wel of niet goed worden ondersteund. Deze week gaan we leren hoe je een interactieve toepassing in 3 lagen kan ontwerpen en wat je kan doen als een browser een 'enhancement' niet kan tonen.
-
-#### Woensdag 17 maart
-
-Woensdag krijg je een briefing van de eindopdracht en een college over browsers, en alles (!) wat daarbij hoort. Daarna gaan we aan de slag: als je een interactieve toepassing ontwerpt die alle gebruikers, met alle browsers moeten kunnen zien, dan zul je moeten bedenken hoe je de toepassing in 3 lagen kan opbouwen, eerst bepaal je de core functionaliteit en de user-delight ... schetsen maar!
-
-| Woensdag 17/3 | Wat  |
-|---|---|
-| 9:30 | College les 3 over browsers, browser detect, support detection en web views |
-|  | [Briefing eindopdracht ✨ Progressive Enhanced Browser Technologie](course/Eindopdracht.md) |
-| 10:30 | Sessies: User Deligt & Core functionaliteit ✨ |
-| 16:00 | Checkout per team |
-
-#### Donderdag 18 maart
-
-Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.  
-
-🤟 Vandaag geeft [Heydon Pickering](https://heydonworks.com) een gastcollege om 14:00. Heydon Pickering is een web developer, hij geeft lezingen en schrijft over toegankelijkeid en web design o.a. voor [Smashing Magazin](https://www.smashingmagazine.com/author/heydon-pickering/). Vorige week heb je een metafoor voor PE bedacht naar aanleiding van een filmpje van Hedon Pickering zelf. Hij komt vandaag langs! Wat wil je hem vragen over het web?
-
-| Donderdag 18/3 | Wat  |
-|---|---|
-| 9:30 | College les 4 over form-validatie |
-| 10:30 | Sessies: Bouwen in 3 lagen ✨ |
-| 14:00 | Q&A Heydon Pickering 🤟 |
-| 16:00 | Checkout per team |
-
-Lezen voor les 4 📖
-
-- [Be progressive by Jeremy Keith](https://adactio.com/journal/7706)
-
-#### Vrijdag 19 maart
-
-Vrijdag bespreken we in clubjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen.
-
-| Vrijdag 19/3 | Wat  |
-|---|---|
-| 11:30 | Vorderingen bespreken in team C ✨ |
-| 13:00 | Vorderingen bespreken in team A ✨ |
-| 14:30 | Vorderingen bespreken in team B ✨ |
-| 16:00 | Work Hard Play Hard |
-
-### Week 3
-
-Deze week werken we verder werken aan de eindopdracht en houden we gesprekken om jullie vorderingen te bespreken en vragen te beantwoorden.
-
-#### Woensdag 24 maart
-
-| Woensdag 24/3 | Wat  |
-|---|---|
-| 9:30 | College les 5 over Viewports |
-| 10:30 | Sessies: Feature detectie en testen ✨ |
-| 16:00 | Checkout per team |
-
-#### Donderdag 25 maart
-
-Donderdag gaan we verder werken aan de opdracht en doen we code-review sessies.
-
-🤟 Vandaag geeft Ischa Gast een presentatie.
-
-| Donderdag 25/3 | Wat  |
-|---|---|
-| 9:30 | Gastcollege Ischa Gast 🤟 |
-| 10:30 | Sessies: Code-reviews ✨ |
-| 16:00 | Checkout per team |
-
-Lezen voor les 6 📖
-
-- [A minimum viable experience makes for a resilient, inclusive website or app](https://piccalil.li/blog/a-minimum-viable-experience-makes-for-a-resilient-inclusive-website-or-app)
-
-#### Vrijdag 26 maart
-
-Vrijdag bespreken we in clubjes de vorderingen voor de eindopdracht. Zorg dat je een code-review hebt gekregen van twee mede-studenten.
-
-| Vrijdag 26/3 | Wat  |
-|---|---|
-| 11:30 | Vorderingen bespreken in team B ✨ |
-| 13:00 | Vorderingen bespreken in team C ✨ |
-| 14:30 | Vorderingen bespreken in team A ✨ |
-| 16:00 | Work Hard Play Hard |
-
-### Week 4
-
-In week 4 wordt de eindopdracht beoordeeld. Dan gaan we je werk bekijken, bespreken en beoordelen.
-
-| Dinsdag 30/3 | Wat  |
-|---|---|
-| 9:30 - 15:30 | Beoordelingsgesprekken ✨ |
-
-| Woensdag 31/3 | Wat  |
-|---|---|
-| 9:30 - 15:30 | Beoordelingsgesprekken ✨ |
-
-| Donderdag 1/4 | Wat  |
-|---|---|
-| 14:00 | [Weekly Nerd 2️⃣](https://github.com/cmda-minor-web/weekly-nerd-2021)|
+-   Chrome
+-   Firefox
+-   Android internet
+-   IOS safari
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
