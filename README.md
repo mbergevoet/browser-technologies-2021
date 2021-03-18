@@ -88,6 +88,20 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 -   Android internet
 -   IOS safari
 
+## Eerste ontwerp
+
+**Desktop Ontwerp**
+![Desktop Ontwerp 1](https://i.imgur.com/biETYWH.png)
+
+![Desktop Ontwerp 2](https://i.imgur.com/b2zymZM.png)
+
+![Desktop Ontwerp 3](https://i.imgur.com/UzMoJqM.png)
+
+**Mobiel Ontwerp**
+![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
+
+## Terug val plan
+![Plan](https://i.imgur.com/Q96M0F6.png)
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 <!-- ☝️ replace this description with a description of your own work -->
