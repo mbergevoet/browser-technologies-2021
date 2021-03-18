@@ -97,7 +97,7 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 
 ![Desktop Ontwerp 3](https://i.imgur.com/UzMoJqM.png)
 
-**Mobiel Ontwerp**
+**Mobiel Ontwerp** <br>
 ![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
 
 ## Terug val plan
