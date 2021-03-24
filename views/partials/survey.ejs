@@ -1,0 +1,61 @@
+<main>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+    <section>
+        <h1>
+            Vraag <%= questionData.id %>
+        </h1>
+        <p>
+            <%= questionData.question %>
+        </p>
+        <form id="gradeform" action="<%= questionData.route %>" type="post">
+            <fieldset>
+                <label for="teacher">Kies je docent</label>
+                <div>
+                    <label for="docent">
+                        <input type="radio" id="docent" name="docent" value="<%= questionData.teacherOne %>">
+                        <%= questionData.teacherOne %>
+                    </label>
+                    <label for="docent">
+                        <input type="radio" id="docent" name="docent" value="<%= questionData.teacherTwo %>">
+                        <%= questionData.teacherTwo %>
+                    </label>
+                </div>
+                <label for="begin-datum">
+                    Begin datum
+                </label>
+                <input type="date" id="datum" name="datum" required>
+                <label for="eind-datum">
+                    Eind datum
+                </label>
+                <input type="date" id="datum" name="datum" required>
+                <label for="grading">
+                    Lesstof
+                </label>
+                <input title="Alleen cijfers 1 tot 10" type="range" id="gradeInputId1" value="0" min="1" max="10"
+                    oninput="gradeOnputId1.value = gradeInputId1.value" required>
+                <output id="gradeOnputId1">-</output>
+                <label for="grading">
+                    Uitleg
+                </label>
+                <input title="Alleen cijfers 1 tot 10" type="range" id="gradeInputId2" value="0" min="1" max="10"
+                    oninput="gradeOnputId2.value = gradeInputId2.value" required>
+                <output id="gradeOnputId2">-</output>
+                <label for="grading">
+                    Eigen inzicht
+                </label>
+                <input title="Alleen cijfers 1 tot 10" type="range" id="gradeInputId3" value="0" min="1" max="10"
+                    oninput="gradeOnputId3.value = gradeInputId3.value" required>
+                <output id="gradeOnputId3">-</output>
+            </fieldset>
+            <input id="submitbtn" type="submit" value="Sla Op"></input>
+        </form>
+    </section>
+</main>

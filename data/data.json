@@ -1,0 +1,72 @@
+{
+    "users": [
+        {
+            "name": "Jan",
+            "id": "1",
+            "surveys": [
+                {
+                    "survey": "kickoff",
+                    "complete": false
+                },
+                {
+                    "survey": "webbappfromscratch",
+                    "complete": false
+                },
+                {
+                    "survey": "csstotherescue",
+                    "complete": false
+                },
+                {
+                    "survey": "progressivewebapp",
+                    "complete": false
+                },
+                {
+                    "survey": "browsertechnologies",
+                    "complete": false
+                },
+                {
+                    "survey": "weeklynerd",
+                    "complete": false
+                },
+                {
+                    "survey": "realtimeweb",
+                    "complete": false
+                }
+            ]
+        },
+        {
+            "name": "Bert",
+            "id": "2",
+            "surveys": [
+                {
+                    "survey": "kickoff",
+                    "complete": false
+                },
+                {
+                    "survey": "webbappfromscratch",
+                    "complete": false
+                },
+                {
+                    "survey": "csstotherescue",
+                    "complete": false
+                },
+                {
+                    "survey": "progressivewebapp",
+                    "complete": false
+                },
+                {
+                    "survey": "browsertechnologies",
+                    "complete": false
+                },
+                {
+                    "survey": "weeklynerd",
+                    "complete": false
+                },
+                {
+                    "survey": "realtimeweb",
+                    "complete": false
+                }
+            ]
+        }
+    ]
+}

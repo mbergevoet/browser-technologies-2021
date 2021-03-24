@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "question": "Hoe vond je de Kick Off? Beoordeel het vak hier",
+        "route": "/question/2",
+        "teacherOne": "Koop Reynders",
+        "teacherTwo": "Joost Faber"
+    },
+    {
+        "id": "2",
+        "question": "Hoe vond je het vak Web App From Scratch? Beoordeel het vak hier",
+        "route": "/question/3",
+        "teacherOne": "Suus Ten Voorde",
+        "teacherTwo": "Joost Faber"
+    },
+    {
+        "id": "3",
+        "question": "Hoe vond je het vak CSS To The Rescue? Beoordeel het vak hier",
+        "route": "/question/4",
+        "teacherOne": "Sanne 'T Hooft",
+        "teacherTwo": "Vasilis Van Gemert"
+    },
+    {
+        "id": "4",
+        "question": "Hoe vond je het vak Progressive Web App? Beoordeel het vak hier",
+        "route": "/question/5",
+        "teacherOne": "Joost Faber",
+        "teacherTwo": "Declan Rek"
+    },
+    {
+        "id": "5",
+        "question": "Hoe vond je het vak Browser Technologies? Beoordeel het vak hier",
+        "route": "/question/6",
+        "teacherOne": "Koop Reynders",
+        "teacherTwo": "Peter Paul Koch"
+    },
+    {
+        "id": "6",
+        "question": "Hoe vond je van de Weekly Nerd? Beoordeel het vak hier",
+        "route": "/question/7",
+        "teacherOne": "Koop Reynders",
+        "teacherTwo": "Joost Faber"
+    },
+    {
+        "id": "7",
+        "question": "Hoe vond je van het vak Real Time Web? Beoordeel het vak hier",
+        "route": "/question/8",
+        "teacherOne": "Unknown",
+        "teacherTwo": "Unknown"
+    }
+]
