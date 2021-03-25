@@ -170,14 +170,15 @@ main section h1{
 #gradeform {
 	margin: 0 3%;
 }
-#gradeform label:first-child {
-	margin: 0.5em 0 0.5em;
+
+#gradeform fieldset > label:not(:first-child) {
+	margin-top: 1.5em;
 }
 
-#gradeform label:not(:first-child) {
+#gradeform label {
 	display: block;
 	font-size: 1.5em;
-	margin: 1.5em 0 0.5em;
+	margin: 0.5em 0 0.5em;
 }
 
 #gradeform div label input{
