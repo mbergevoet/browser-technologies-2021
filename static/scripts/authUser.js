@@ -3,35 +3,42 @@ const fs = require('fs');
 function createNewUser(studentName, studentId) {
     // Create new object for user
     const object = {
-        name: studentName,
-        id: studentId,
+        name: studentId,
+        id: studentName,
         surveys: [
             {
                 survey: 'kickoff',
+                courseName: 'Kick Off',
                 complete: false,
             },
             {
                 survey: 'webbappfromscratch',
+                courseName: 'Web App From Scratch',
                 complete: false,
             },
             {
                 survey: 'csstotherescue',
+                courseName: 'CSS To The Rescue',
                 complete: false,
             },
             {
                 survey: 'progressivewebapp',
+                courseName: 'Progressive Web App',
                 complete: false,
             },
             {
                 survey: 'browsertechnologies',
+                courseName: 'Browser Technologies',
                 complete: false,
             },
             {
                 survey: 'weeklynerd',
+                courseName: 'Weekly Nerd',
                 complete: false,
             },
             {
                 survey: 'realtimeweb',
+                courseName: 'Real Time Web',
                 complete: false,
             },
         ],
@@ -85,7 +92,7 @@ function authUser(studentName, studentId, req, res) {
                 console.log('User created');
             }
         });
-        return res.redirect('/home');
+        return res.redirect('/home/${id}');
     }
 }
 

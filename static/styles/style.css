@@ -40,6 +40,7 @@ table {
 	--white: #ffffff;
 	--red: #FF003E;
 	--blue: #2603FF;
+	--done: #8875ff;
 }
 
 * {
@@ -74,7 +75,6 @@ main > ul {
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
-	
 }
 
 main > ul::before {
@@ -96,7 +96,7 @@ main > ul li {
 	z-index: 2;
 }
 
-main ul li:first-child {
+main > ul li:first-child {
 	padding: 10px 23px;
 }
 
@@ -126,6 +126,34 @@ main ul li:first-child {
 	padding: 0.5em;
 }
 
+#homeSection {
+	margin: 5% auto;
+}
+
+#homeSection ul {
+	margin: 0 3%;
+	padding: 0 0 1em;
+}
+
+#homeSection ul li {
+	margin: 1em 0;
+}
+
+#homeSection ul li a {
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#homeSection ul span {
+	display: inline;
+	color: var(--done);
+}
+
+.done {
+	font-size: 1.5em;
+	color: var(--done);
+}
+
 section {
 	margin: 0 auto;
 	max-width: 800px;
@@ -137,11 +165,6 @@ section {
 main section h1{
 	padding: 1em 0 1em 3%;
 	font-size: 2.5em;
-}
-
-main section p {
-	padding: 0 0 1.5em 3%;
-	font-size: 2em;
 }
 
 #gradeform {
