@@ -1,13 +1,5 @@
 <main>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-    </ul>
+    <progress id="voortgang" value="0" max="6"> 32% </progress>
     <section>
         <h1>
             <%= courseData.question %>
@@ -17,22 +9,22 @@
                 <label for="teacher">Kies je docent</label>
                 <div>
                     <label for="docent">
-                        <input type="radio" id="docent" name="docent" value="<%= courseData.teacherOne %>">
+                        <input type="radio" id="docentOne" name="docent" value="<%= courseData.teacherOne %>">
                         <%= courseData.teacherOne %>
                     </label>
                     <label for="docent">
-                        <input type="radio" id="docent" name="docent" value="<%= courseData.teacherTwo %>">
+                        <input type="radio" id="docentTwo" name="docent" value="<%= courseData.teacherTwo %>">
                         <%= courseData.teacherTwo %>
                     </label>
                 </div>
                 <label for="begin-datum">
                     Begin datum
                 </label>
-                <input type="date" id="datum" name="datum" required>
+                <input type="date" id="begindatum" name="begindatum" required>
                 <label for="eind-datum">
                     Eind datum
                 </label>
-                <input type="date" id="datum" name="datum" required>
+                <input type="date" id="einddatum" name="einddatum" required>
                 <label for="grading">
                     Lesstof
                 </label>
@@ -52,7 +44,7 @@
                     oninput="gradeOnputId3.value = gradeInputId3.value" name="eigeninzicht" required>
                 <output id="gradeOnputId3">-</output>
             </fieldset>
-            <input id="submitbtn" type="submit" value="Sla Op"></input>
+            <input id="submitbtn" type="submit" value="Verstuur"></input>
         </form>
     </section>
 </main>

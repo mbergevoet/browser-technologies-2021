@@ -1,5 +1,9 @@
 # Browser Technologies @cmda-minor-web 20-21
 
+## Inhoud
+-   [Usecase](#Mijn usecase)
+-   [LiveDemo](#Live Demo)
+
 ## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 
 Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
