@@ -1,8 +1,13 @@
 console.log('Gekoppelt!')
 
-function saveInputs(selectedElement) {
-    localStorage.setItem(selectedElement.target.name, selectedElement.target.value)
-    console.log('focus uit!')
+localStorageChecker = function () {
+    try {
+        localStorage.setItem('test', 'test');
+        localStorage.removeItem('test');
+        return true;
+    } catch (e) {
+        return false;
+    }
 }
 
 function displaySavedInputs() {
@@ -38,11 +43,39 @@ function displaySavedInputs() {
     });
 }
 
-const form = document.querySelector('#gradeform')
+const form = document.querySelector('form')
 
 form.addEventListener('focusout', function (event) {
-    console.log(event.target)
-    localStorage.setItem(event.target.name, event.target.value)
+    // console.log(event.target)
+    if (localStorageChecker()) {
+        let data = localStorage.getItem('item')
+        data = data ? JSON.parse(data) : {}
+
+        data[event.target.name] = event.target.value;
+        localStorage.setItem(form.id, JSON.stringify(data))
+
+        // localStorage.setItem(event.target.name, event.target.value)
+        // localStorage.setItem(form.id, JSON.stringify(event.target.value));
+    }
 }, true)
 
-window.addEventListener('load', displaySavedInputs)
+// form.addEventListener('focusout', function (event) {
+//     const progressBar = document.querySelector('#voortgang')
+//     const fieldset = document.querySelector('fieldset')
+//     if (event.target.validity.valid === true) {
+//         console.log(event.target.validity.valid)
+//         let validityCounter = 0
+//         // validityCounter++
+//         // console.log(validityCounter)
+//         console.log(fieldset.children.input)
+//         console.log(progressBar.setAttribute('value', validityCounter++))
+//     }
+// })
+
+// Retrieve the object from storage
+// var retrievedObject = localStorage.getItem('testObject');
+// console.log('retrievedObject: ', JSON.parse(retrievedObject));
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     loadFormDataFromLocalStorage();
+// }, false);

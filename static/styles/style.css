@@ -155,7 +155,7 @@ main > ul li:first-child {
 }
 
 section {
-	margin: 0 auto;
+	margin: 5% auto;
 	max-width: 800px;
 	background: var(--white);
 	padding: 0% 2%;
@@ -163,31 +163,68 @@ section {
 }
 
 main section h1{
-	padding: 1em 0 1em 3%;
+	padding: 1em 0 0 3%;
 	font-size: 2.5em;
 }
 
-#gradeform {
+meter {
+	margin: 0.5em 3%;
+	width: 93%;
+	height: 3em;
+	/* border: 2px solid var(--blue); */
+	/* border-radius: 50px; */
+	/* background: white; */
+}
+
+progress::-webkit-progress-value,
+progress::-moz-progress-bar {
+	background: var(--blue);
+}
+
+#kickoff,
+#webbappfromscratch,
+#csstotherescue,
+#progressivewebapp,
+#browsertechnologies,
+#weeklynerd,
+#realtimeweb {
 	margin: 0 3%;
 }
 
-#gradeform fieldset > label:not(:first-child) {
+#kickoff fieldset > label:not(:first-child),
+#webbappfromscratch fieldset > label:not(:first-child),
+#csstotherescue fieldset > label:not(:first-child),
+#progressivewebapp fieldset > label:not(:first-child),
+#browsertechnologies fieldset > label:not(:first-child),
+#weeklynerd fieldset > label:not(:first-child),
+#realtimeweb fieldset > label:not(:first-child) {
 	margin-top: 1.5em;
 }
 
-#gradeform label {
+#kickoff label,
+#webbappfromscratch label,
+#csstotherescue label,
+#progressivewebapp label,
+#browsertechnologies label,
+#weeklynerd label,
+#realtimeweb label {
 	display: block;
 	font-size: 1.5em;
 	margin: 0.5em 0 0.5em;
 }
 
-#gradeform div label input{
+#kickoff div label input,
+#webbappfromscratch div label input,
+#csstotherescue div label input,
+#progressivewebapp div label input,
+#browsertechnologies div label input,
+#weeklynerd div label input,
+#realtimeweb div label input{
 	height: 1.5em;
 	width: 1.5em;
 }
 
 #gradeOnputId {
-	
 	text-align: left;
 	/* margin-left: 3%; */
 	font-size: 2em;

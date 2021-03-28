@@ -7,21 +7,10 @@ const path = require('path')
 // var bodyParser = require('body-parser')
 
 // const questions = require('./static/json/questions.json');
-const { authUser } = require('./static/scripts/authUser');
-const { getCourseData } = require('./static/scripts/getCourseData');
-const { addToJson } = require('./static/scripts/addToJson');
-const { surveyCompleted } = require('./static/scripts/surveyCompleted');
-
-// function storeDataInJsonFile(data) {
-//     const dataToJson = JSON.stringify(data);
-//     return fs.appendFileSync(
-//         './data/survey-data.json',
-//         dataToJson + ',\n',
-//         (error) => {
-//             if (error) throw error;
-//         }
-//     );
-// }
+const { authUser } = require('./helpers/authUser');
+const { getCourseData } = require('./helpers/getCourseData');
+const { addToJson } = require('./helpers/addToJson');
+const { surveyCompleted } = require('./helpers/surveyCompleted');
 
 app
     .use(express.static(`${__dirname}/static`))

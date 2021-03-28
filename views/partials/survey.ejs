@@ -1,10 +1,10 @@
 <main>
-    <progress id="voortgang" value="0" max="6"> 32% </progress>
     <section>
         <h1>
             <%= courseData.question %>
         </h1>
-        <form id="gradeform" action="/subject/<%= courseData.course %>/<%= id %>" method="post">
+        <meter id="meter" form="<%= courseData.course %>" value="0" max="6"></meter>
+        <form id="<%= courseData.course %>" action="/subject/<%= courseData.course %>/<%= id %>" method="post">
             <fieldset>
                 <label for="teacher">Kies je docent</label>
                 <div>
