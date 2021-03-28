@@ -10,54 +10,52 @@ localStorageChecker = function () {
     }
 }
 
-function displaySavedInputs() {
-    const inputs = ['docent', 'begindatum', 'einddatum', 'lesstof', 'uitleg', 'eigeninzicht']
-    const radioBtnOne = document.querySelector('#docentOne')
-    const radioBtnTwo = document.querySelector('#docentTwo')
-    const beginDatum = document.querySelector('#begindatum')
-    const endDate = document.querySelector('#einddatum')
-    const rangeOne = document.querySelector('#gradeInputId1')
-    const rangeTwo = document.querySelector('#gradeInputId2')
-    const rangeThree = document.querySelector('#gradeInputId3')
-    const DOMelements = [radioBtnOne, radioBtnTwo, beginDatum, endDate, rangeOne, rangeTwo, rangeThree]
+const form = document.querySelector("form");
 
-    inputs.forEach(element => {
-        if (localStorage.getItem(element) !== null) {
-            DOMelements.forEach(domElement => {
-                console.log(domElement)
-                if (domElement.type == 'radio' || domElement.type == 'checkbox') {
-                    domElement.checked = value;
-                } else {
-                    domElement.value = value;
+form.addEventListener('blur', (event) => {
+    const formData = new FormData(form);
+    let formEntryData = {};
+
+    for (const pair of formData.entries()) {
+        // name en value in het object
+        formEntryData[pair[0]] = pair[1];
+    }
+
+    localStorage.setItem(form.id, JSON.stringify(formEntryData));
+}, true);
+
+function loadFormDataFromLocalStorage() {
+    const storedFormData = localStorage.getItem(form.id);
+
+    if (storedFormData) {
+        const parsedStoredFormData = JSON.parse(storedFormData);
+
+        for (var pair of Object.entries(parsedStoredFormData)) {
+            const pairDomElement = document.getElementById(pair[0]);
+
+            if (pairDomElement) {
+                pairDomElement.value = pair[1];
+
+                if (pairDomElement.type == 'range' && pairDomElement.value == pair[1]) {
+                    const outputDomElement = document.getElementsByClassName(pair[0])[0];
+                    outputDomElement.innerHTML = pair[1];
                 }
-            });
-            // let field = document.getElementById(`${element}`)
-            // console.log(element)
-            // console.log(field)
-            // if (field.type == 'radio' || field.type == 'checkbox') {
-            //     field.checked = value;
-            // } else {
-            //     field.value = value;
-            // }
+            } else {
+                const pairDomElements = document.getElementsByClassName(pair[0]);
+
+                for (const pairDomElement of pairDomElements) {
+                    if (pairDomElement.type == 'radio' && pairDomElement.value == pair[1]) {
+                        pairDomElement.checked = true;
+                    }
+                }
+            }
         }
-    });
+    }
 }
 
-const form = document.querySelector('form')
-
-form.addEventListener('focusout', function (event) {
-    // console.log(event.target)
-    if (localStorageChecker()) {
-        let data = localStorage.getItem('item')
-        data = data ? JSON.parse(data) : {}
-
-        data[event.target.name] = event.target.value;
-        localStorage.setItem(form.id, JSON.stringify(data))
-
-        // localStorage.setItem(event.target.name, event.target.value)
-        // localStorage.setItem(form.id, JSON.stringify(event.target.value));
-    }
-}, true)
+document.addEventListener('DOMContentLoaded', function () {
+    loadFormDataFromLocalStorage();
+}, false);
 
 // form.addEventListener('focusout', function (event) {
 //     const progressBar = document.querySelector('#voortgang')
@@ -71,11 +69,3 @@ form.addEventListener('focusout', function (event) {
 //         console.log(progressBar.setAttribute('value', validityCounter++))
 //     }
 // })
-
-// Retrieve the object from storage
-// var retrievedObject = localStorage.getItem('testObject');
-// console.log('retrievedObject: ', JSON.parse(retrievedObject));
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     loadFormDataFromLocalStorage();
-// }, false);
