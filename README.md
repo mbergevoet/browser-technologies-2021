@@ -12,11 +12,11 @@ Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het 
 
 ## Mijn usecase
 
-Ik kies voor de Enquete over de minor Web Development. Of in elk geval een enquete lijkt me leuk. Als het onderwerp anders mag zijn zou ik dat ook graag doen.
+Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een enquete lijkt me leuk. Als het onderwerp anders mag zijn zou ik dat ook graag doen.
 
 ## Live Demo
 
-[Link naar live demo](http://mbergevoet.github.io/browser-technologies-2021)
+[Link naar live demo](https://git.heroku.com/minor-web-dev-survey.git)
 
 ## Vereisten
 
@@ -106,6 +106,24 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 
 ## Terug val plan
 ![Plan](https://i.imgur.com/Q96M0F6.png)
+
+
+
+<!-- Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag. -->
+
+<!-- Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast -->
+
+<!-- Een lijst met vier browsers waarin je hebt getest:
+voor de desktop 1 Chromium 1 niet-Chromium browser
+voor mobiel 1 iOS + 1 Android OF een Samsung- en een niet-Samsung Android) -->
+
+<!-- een testverslag met
+een beschrijving van de feature-lijst die zijn onderzocht
+welke browsers de feature(s) wel/niet ondersteunen
+welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
+een screenreader test (dit gaan we bij het volgende vak Human Centred Design doen) -->
+
+
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 <!-- ☝️ replace this description with a description of your own work -->
