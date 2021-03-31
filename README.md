@@ -104,8 +104,20 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 **Mobiel Ontwerp** <br>
 ![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
 
-## Terug val plan
+## Terug val plan/ Wireflow
 ![Plan](https://i.imgur.com/Q96M0F6.png)
+
+## Browser Technologie
+
+localStorage
+
+## Enhancements
+
+- Kan meerdere gebruikers de enquête laten invullen
+- Onhoudt wat je hebt ingevuld
+- Per gebruiker word er bijgehouden welke enquete je hebt ingevuld
+- Weet wanneer je iets hebt ingevuld en laat het zien
+- Checkt of je alle velden hebt ingevoerd
 
 
 
