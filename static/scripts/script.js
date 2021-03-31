@@ -2,6 +2,7 @@ console.log('Gekoppelt!')
 
 const xhr = new XMLHttpRequest();
 
+// Global consts voor de elementen uit de html
 const form = document.querySelector("form");
 const radioBtnOne = document.querySelector("#radioOne");
 const radioBtnTwo = document.querySelector("#radioTwo");
@@ -11,6 +12,8 @@ const rangeOne = document.querySelector("#lesstof");
 const rangeTwo = document.querySelector("#uitleg");
 const rangeThree = document.querySelector("#eigeninzicht");
 
+// functie die checkt of localStorage beshcikbaar is
+// Bron: https://gist.github.com/antoine-pous/c73e5a3a3b1e9507597d 
 localStorageChecker = function () {
     try {
         localStorage.setItem('test', 'test');
@@ -22,12 +25,12 @@ localStorageChecker = function () {
 }
 
 // Met hulp van Oussama
+// Schrijft de ingevulde waarde weg in een object in localStorage
 form.addEventListener('blur', (event) => {
     const formData = new FormData(form);
     let formEntryData = {};
 
     for (const pair of formData.entries()) {
-        // name en value in het object
         formEntryData[pair[0]] = pair[1];
     }
 
@@ -38,6 +41,7 @@ form.addEventListener('blur', (event) => {
 }, true);
 
 // Met hulp van Oussama
+//  Schrijft de opgeslagen data terug in het formulier als het is opgeslagen
 function loadFormDataFromLocalStorage() {
     const storedFormData = localStorage.getItem(form.id);
 
@@ -69,13 +73,13 @@ function loadFormDataFromLocalStorage() {
     }
 }
 
-// On DOMContentLoaded the function above will trigger to 
+// Op DOMContentLoaded zal de functie om de opgeslagen data te laten zien worden getriggert 
 document.addEventListener('DOMContentLoaded', function () {
     loadFormDataFromLocalStorage();
 }, false);
 
+// Functies die het check icoontje laten zien door een class toe te voegen die de opacity op 1 zet
 radioBtnOne.addEventListener('click', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconOne')
     if (radioBtnOne.checked === true) {
         icon.classList.add('visible')
@@ -83,7 +87,6 @@ radioBtnOne.addEventListener('click', function () {
 })
 
 radioBtnTwo.addEventListener('click', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconTwo')
     if (radioBtnTwo.checked === true) {
         icon.classList.add('visible')
@@ -91,7 +94,6 @@ radioBtnTwo.addEventListener('click', function () {
 })
 
 startDate.addEventListener('focusout', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconThree')
     if (startDate.value != '') {
         icon.classList.add('visible')
@@ -99,7 +101,6 @@ startDate.addEventListener('focusout', function () {
 })
 
 endDate.addEventListener('focusout', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconFour')
     if (endDate.value != '') {
         icon.classList.add('visible')
@@ -107,7 +108,6 @@ endDate.addEventListener('focusout', function () {
 })
 
 rangeOne.addEventListener('focusout', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconFive')
     if (rangeOne.value != 0 || rangeTwo.value != null) {
         icon.classList.add('visible')
@@ -115,7 +115,6 @@ rangeOne.addEventListener('focusout', function () {
 })
 
 rangeTwo.addEventListener('focusout', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconSix')
     if (rangeTwo.value != 0 || rangeTwo.value != null) {
         icon.classList.add('visible')
@@ -123,7 +122,6 @@ rangeTwo.addEventListener('focusout', function () {
 })
 
 rangeThree.addEventListener('focusout', function () {
-    // console.log(event.target.value)
     const icon = document.querySelector('#iconSeven')
     if (rangeThree.value != '') {
         icon.classList.add('visible')

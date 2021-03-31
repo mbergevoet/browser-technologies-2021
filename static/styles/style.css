@@ -100,7 +100,7 @@ main {
 }
 
 #homeSection ul {
-	margin: 0 3%;
+	margin: 0 8%;
 	padding: 0 0 1em;
 }
 
@@ -310,6 +310,12 @@ output {
 }
 
 @media screen and (min-width: 450px) {
+
+	#homeSection ul {
+		margin: 0 3%;
+		padding: 0 0 2.5em;
+	}
+
 	header{
 		padding: 1%;
 		font-size: 1.5em;

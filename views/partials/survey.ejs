@@ -10,13 +10,13 @@
                 <div>
                     <label for="docent">
                         <input type="radio" class="docent" id="radioOne" name="docent"
-                            value="<%= courseData.teacherOne %>">
+                            value="<%= courseData.teacherOne %>" required>
                         <%= courseData.teacherOne %>
                             <img class="icon" id="iconOne" src="/icons/checked.svg" alt="checked icon">
                     </label>
                     <label for="docent">
                         <input type="radio" class="docent" id="radioTwo" name="docent"
-                            value="<%= courseData.teacherTwo %>">
+                            value="<%= courseData.teacherTwo %>" required>
                         <%= courseData.teacherTwo %>
                             <img class="icon" id="iconTwo" src="/icons/checked.svg" alt="checked icon">
                     </label>
@@ -36,8 +36,8 @@
                     Lesstof
                 </label>
                 <input title="Alleen cijfers 1 tot 10" type="range" id="lesstof" value="" min="1" max="10"
-                    oninput="gradeOnputId1.value = lesstof.value" name="lesstof" required>
-                <output id="gradeOnputId1" class="lesstof">-</output>
+                    oninput="gradeOnputId1.value = lesstof.value" name="lesstof" step="1" required>
+                <output id="gradeOnputId1" class="lesstof"></output>
                 <img class="icon" id="iconFive" src="/icons/checked.svg" alt="checked icon">
                 <div class="range">
                     <label for="one" class="one">1</label>
@@ -47,8 +47,8 @@
                     Uitleg
                 </label>
                 <input title="Alleen cijfers 1 tot 10" type="range" id="uitleg" value="" min="1" max="10"
-                    oninput="gradeOnputId2.value = uitleg.value" name="uitleg" required>
-                <output id="gradeOnputId2" class="uitleg">-</output>
+                    oninput="gradeOnputId2.value = uitleg.value" name="uitleg" step="1" required>
+                <output id="gradeOnputId2" class="uitleg"></output>
                 <img class="icon" id="iconSix" src="/icons/checked.svg" alt="checked icon">
                 <div class="range">
                     <label for="one" class="one">1</label>
@@ -58,8 +58,8 @@
                     Eigen inzicht
                 </label>
                 <input title="Alleen cijfers 1 tot 10" type="range" id="eigeninzicht" value="" min="1" max="10"
-                    oninput="gradeOnputId3.value = eigeninzicht.value" name="eigeninzicht" required>
-                <output id="gradeOnputId3" class="eigeninzicht">-</output>
+                    oninput="gradeOnputId3.value = eigeninzicht.value" name="eigeninzicht" step="1" required>
+                <output id="gradeOnputId3" class="eigeninzicht"></output>
                 <img class="icon" id="iconSeven" src="/icons/checked.svg" alt="checked icon">
                 <div class="range">
                     <label for="one" class="one">1</label>
