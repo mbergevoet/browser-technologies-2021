@@ -273,8 +273,8 @@ Voor de andere features als de check icoontjes en de localStorage werken zoals z
 ### Android Chrome
 
 Ik heb de website ook op mijn eigen android telefoon bekeken. Daar zijn er wel wat dingen die me opvielen. De core functionaliteit blijft gelukkig wel werken, je kunt nog steeds alles invullen en versturen en de server houdt bij welke enquêtes je al hebt ingevuld.
-Het eerst wat me opvalt is dat er geen datum template is net als op de computer voor de datum invoervelden (zie linker afbeelding). Waarschijnlijk is dit gewoon iets van Android Chrome. Als je er eenmaal op klikt werkt hij wel gewoon maar het mist toch een stukje feedback
-naar de gebruiker. En als tweede valt me op dat je wel de sliders kunt gebruiken om je cijfer in te voeren alleen verschijnen de check icoontjes hier niet bij (zie rechter afbeelding). Ik vermoed dat het te maken heeft met dat het `focusout` event niet goed werkt op sliders specifiek in Androind Chrome.
+Het eerst wat me opvalt is dat er geen datum template is net als op de computer voor de datum invoervelden (zie eerste afbeelding). Waarschijnlijk is dit gewoon iets van Android Chrome. Als je er eenmaal op klikt werkt hij wel gewoon maar het mist toch een stukje feedback
+naar de gebruiker. En als tweede valt me op dat je wel de sliders kunt gebruiken om je cijfer in te voeren alleen verschijnen de check icoontjes hier niet bij (zie tweede afbeelding). Ik vermoed dat het te maken heeft met dat het `focusout` event niet goed werkt op sliders specifiek in Androind Chrome.
 Zoals te zien is werken ze wel bij de datum invoervelden maar om één ondere reden niet bij de sliders. Het opslaan van de invoervelden in localStorage werkt ook gewoon zoals het zou moeten dus dat is wel heel goed. <br>
 
 <img src="https://i.imgur.com/dlclr3l.jpg" width="400" alt="geen datum android chrome" style="display: inline;">
@@ -282,9 +282,9 @@ Zoals te zien is werken ze wel bij de datum invoervelden maar om één ondere re
 
 ### Safari
 
-En tenslotte heb ik de website in Safari getest. Daar waren helaas wel wat meer probleempjes. Gelukkig blijft ook hier de core functionaliteit gewoon werken. Als eerste is ook hier de datum preview afwezig en dat zal wel met mobiel te maken hebben vermoed ik dan.
-Daar is helaas niks aan te doen omdat de datum invoervelden gewoon een title hebben maar die komt daar blijkbaar dus niet te staan. Ten tweede is er net als in Android Chrome geen check icoontje te zien als je een slider invoerd. Dit heeft denk ik ook de zelfde reden als in Android Chrome vermoed ik.
-En als laatste lijkt de localStorage te werken voor de radio buttons en de datum invoervelden alleen niet voor de sliders. Er komt geen getalletje te staan achter de slider als de ik de pagina refresh en de slider verplaatst ook niet van plek en blijft gewoon op nul staan. In Android Chrome gebeurt dit allebei wel.
+En tenslotte heb ik de website in Safari getest. Daar waren helaas wel wat meer probleempjes. Gelukkig blijft ook hier de core functionaliteit gewoon werken. Als eerste is ook hier de datum preview afwezig en dat zal wel met mobiel te maken hebben vermoed ik dan (zie eerste afbeelding).
+Daar is helaas niks aan te doen omdat de datum invoervelden gewoon een title hebben maar die komt daar blijkbaar dus niet te staan. Ten tweede is er net als in Android Chrome geen check icoontje te zien als je een slider invoerd (zie tweede afbeelding). Dit heeft denk ik ook de zelfde reden als in Android Chrome vermoed ik.
+En als laatste lijkt de localStorage te werken voor de radio buttons en de datum invoervelden alleen niet voor de sliders (zie derde afbeelding). Er komt geen getalletje te staan achter de slider als de ik de pagina refresh en de slider verplaatst ook niet van plek en blijft gewoon op nul staan. In Android Chrome gebeurt dit allebei wel.
 Het zou ook te maken kunnen hebben met de manier hoe localStorage slider opslaat in Safari. Dat het wel word opgeslagen maar niet getoont kan worden omdat ik een andere manier gebruik. <br>
 
 <img src="https://i.imgur.com/HgPVUHw.jpg" width="400" alt="geen datum safari" style="display: inline;">
