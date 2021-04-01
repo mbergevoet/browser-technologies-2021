@@ -1,14 +1,14 @@
 # Browser Technologies @cmda-minor-web 20-21
 
 ## Inhoud
--   [Usecase](#Mijn usecase)
--   [LiveDemo](#Live Demo)
+-   [Usecase](##Mijn usecase)
+-   [LiveDemo](##Live Demo)
 
 ## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 
 Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
 
--   [De eindopdracht - Progressive Enhanced Browser Technologie](course/Eindopdracht.md)
+[De eindopdracht - Progressive Enhanced Browser Technologie](course/Eindopdracht.md)
 
 ## Mijn usecase
 
@@ -16,21 +16,52 @@ Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een e
 
 ## Live Demo
 
-[Link naar live demo](https://git.heroku.com/minor-web-dev-survey.git)
+[Link naar live demo](https://minor-web-dev-survey.herokuapp.com/)
 
-## Vereisten
+## Screenshots
+
+![Login](https://i.imgur.com/Ge2yDOF.png)
+![Overzicht](https://i.imgur.com/3A99npM.png)
+![Enquete](https://i.imgur.com/twnF28l.png)
+
+## Installatie
+
+Go to the right directory:
+
+```
+cd yourDirectory
+```
+
+Clone repo:
+
+```
+git clone https://github.com/mbergevoet/browser-technologies-2021.git
+```
+
+Once cloned:
+
+```
+npm install
+```
+
+Once all dependencies are installed:
+
+```
+npm run dev
+```
+
+## Vereisten voor de case
 
 -   Studentgegevens (naam + nummer) verplicht
 
 -   Per vak
-
--   naam
--   docent(en)
--   weken waarin je het vak deed
--   beoordeling op schaal 1-10 van
--   lesstof (hoe moeilijk is het)
--   uitleg (hoe duidelijk is het uitgelegd)
--   eigen inzicht (hoe goed snap je het)
+    -   naam
+    -   docent(en)
+    -   weken waarin je het vak deed
+    -   beoordeling op schaal 1-10 van
+    -   lesstof (hoe moeilijk is het)
+    -   uitleg (hoe duidelijk is het uitgelegd)
+    -   eigen inzicht (hoe goed snap je het)
 
 -   Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
 
@@ -44,8 +75,6 @@ Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een e
 -   De gebruiker kan zien bij welke vraag hij is en hoe lang het dan nog duurt
 -   De gebruiker kan de enquete aan het einde kunnnen "versturen"
 -   De gebruiker kan de pagina refreshen waarbij de browser onthoudt bij welke vraag hij was gebleven
--   De admin kan nieuwe vragen toevoegen
--   De admin kan de nieuwe enquete opslaan
 
 ![Enquete indeling](https://i.imgur.com/fZb7XEJ.jpg)
 De gebruiker kan een vraag invullen en klikken naar de volgende vraag. (functional)
@@ -56,7 +85,28 @@ Dit is het overzicht dat de admin ziet en waar hij een nieuwe vraag kan toevoege
 ![Inlog scherm](https://i.imgur.com/bS5jI0E.jpg)
 Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tussen normale gebruiker en admin. (pleasurable)
 
+## Ontwerp
+
+**Desktop Ontwerp**
+![Desktop Ontwerp 1](https://i.imgur.com/biETYWH.png)
+
+![Desktop Ontwerp 2](https://i.imgur.com/b2zymZM.png)
+
+![Desktop Ontwerp 3](https://i.imgur.com/UzMoJqM.png)
+
+**Mobiel Ontwerp** <br>
+![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
+
+## Terug val plan/ Wireflow
+
+<!-- Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag. -->
+
+![Plan](https://i.imgur.com/Q96M0F6.png)
+<!-- Nieuwe wireflow maken!!! -->
+
 ## HTML elementen
+
+Mogelijke opbouw van de HTML
 
 ```html
 <form></form> <!-- Om de enquete in te vullen -->
@@ -80,76 +130,145 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 -   Web Storage/ Cookies
 -   Templates
 -   Drag and Drop
--   Css Grid/ Flex
+-   CSS Grid/ Flex
 -   Transitions/ Animations
 -   Forms
 -   Data posting
+
+## Browser Technology
+
+Voor mijn case heb ik web storage/ cookies/ localStorage gekozen als browser technology.
+
+## Progressive Enhancements
+
+<!-- Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast -->
+
+- Het ontwerp ziet er duidelijk uit en zorgt voor een betere User Experience
+- Er kunnen meerdere gebruikers een enquête invullen door in te loggen op een account.
+- Per gebruiker word er bijgehouden welke enquete al helemaal is ingevuld.
+- De enquête onhoudt wat je hebt ingevuld als je de pagina verlaad of refresht met behulp van localStorage.
+- De enquête laat een check icoontje zien als je een invoerveld heb ingevuld.
+- De enquête checkt of je invoervelden hebt ingevuld (behalve de sliders helaas) voor dat je het verstuurd.
+
+## Functional layer
+
+![Enquete Pleasureble](https://i.imgur.com/7KaiEzt.png)
+
+![Home](https://i.imgur.com/33uY28z.png)
+
+De functional layer bevat al alles van de core funcionaliteit. Er zijn verschillende HTML pagina's beschikbaar die statisch of dynamisch via de server worden ingeladen. 
+Het mogelijk om in te loggen bij de login pagina. Daarna kun je een enquête kiezen in het menu om hem in te vullen.  Dit komt omdat de logica allemaal via de server word gedaan en dus buiten de gebruiker en hun device ligt.
+Er is bij het formulier geen validatie of feedback en het formulier staat onoverzichtelijk door elkaar. Na het invullen is het niet meer mogelijk om een enquête te openen. Dat word alleen gecommuniceerd met de gebruiker 
+door dat er staat dat de betreffende enquête al is ingevuld en het nu normale tekst is in plaats van een `<a>` tag. 
+
+## Usable layer
+
+![Enquete Usable](https://i.imgur.com/uEVKPj8.png)
+
+![Home](https://i.imgur.com/GnoWz7g.png)
+
+In de usable layer wordt de enquête visueel verbeterd. Er is kleur gebruikt voor de tekst, achtergrond en knoppen en formulieren. Het formulier is correct opgemaakt waardoor alles onder elkaar staat. Er is rekening gehouden met 
+een mobiele opmaak voor als gebruikers via hun mobiele device de website willen bezoeken. Bij de sliders in het formulier staat ook aangegeven welke mogelijke cijfers je kunt invullen als beoordeling en krijgen ook een bijpassende styling
+die meer past bij de rest van het ontwerp.
+Na het invullen van een enquête is nu met een minder heldere kleur aan gegeven dat je niet meer op een enquête kunt invullen. De core functionaliteit blijft verder onveranderd natuurlijk.
+
+## Pleasureble layer
+
+![Enquete Pleasureble](https://i.imgur.com/pE92IWc.png)
+
+In de pleasurable layer komt alles samen en wordt de website niet alleen functioneel maar ook gebruikersvriendelijker. Met behulp van localStorage worden de inputs op het formulier van de gebruiker opgeslagen
+waardoor het mogelijk wordt voor de gebruiker om de website compleet te verlaten of de pagina te refreshen. Bij terugkomst staan de ingevulde velden nog steeds vol. Daar nog bij detecteerd het formulier of je daadwerkelijk iets hebt ingevuld 
+en geeft je een check icoontje als het is ingevuld.  
+
+## Feature detection
+
+Om te zorgen dat de code die zorgt voor het opslaan van de invoervelden alleen getriggerd word als localStorage daadwerkelijk beschikbaar is voer ik de volgende code uit:
+
+```js
+localStorageChecker = function () {
+    try {
+        localStorage.setItem('test', 'test');
+        localStorage.removeItem('test');
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+```
+Bron: https://gist.github.com/antoine-pous/c73e5a3a3b1e9507597d 
+
+Er word hier een test object weggeschreven in localStorage en ook weer verwijderd, als dat lukt returned de function `true`, als het fout gaat komt het in de catch die vervolgend `false` returned wat betekend dat localStorage niet beschibaar is. <br>
+De function kan je daarna gebruiken om andere code heen en zet ik het in een if statement.
+
+```js
+if (localStorageChecker()) {
+    // Hier de code die localStorage gebruikt
+}
+```
+Voor de zekerheid heb ik ook nog een @supports statement in mijn CSS geschreven. Ik zocht op op caniuse.com wat de support was voor `position: relative;` `position: absolute;`. De support was niet 100%, zoals bij elk property eigenlij,k maar toch voor het geval heb ik het niet gesupport word teogevoegd.
+```css
+@supports (position: relative) {
+	.range {
+		position: relative;
+	}
+}
+```
 
 ## Browsers waarin ik ga testen
 
 -   Chrome
 -   Firefox
--   Android internet
--   IOS safari
+-   Android Chrome
+-   Safari
 
-## Eerste ontwerp
+## Testverslag
 
-**Desktop Ontwerp**
-![Desktop Ontwerp 1](https://i.imgur.com/biETYWH.png)
+<!-- een beschrijving van de feature-lijst die zijn onderzocht -->
 
-![Desktop Ontwerp 2](https://i.imgur.com/b2zymZM.png)
+<!-- welke browsers de feature(s) wel/niet ondersteunen -->
 
-![Desktop Ontwerp 3](https://i.imgur.com/UzMoJqM.png)
+<!-- welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests -->
 
-**Mobiel Ontwerp** <br>
-![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
+<!-- een screenreader test (dit gaan we bij het volgende vak Human Centred Design doen) -->
 
-## Terug val plan/ Wireflow
-![Plan](https://i.imgur.com/Q96M0F6.png)
+### Chrome
 
-## Browser Technologie
-
-localStorage
-
-## Enhancements
-
-- Kan meerdere gebruikers de enquête laten invullen
-- Onhoudt wat je hebt ingevuld
-- Per gebruiker word er bijgehouden welke enquete je hebt ingevuld
-- Weet wanneer je iets hebt ingevuld en laat het zien
-- Checkt of je alle velden hebt ingevoerd
+Omdat ik de website als eerste in Chrome gemaakt werkt hier alles zoals het zou moeten. 
+Je kunt nogsteeds inloggen ookal is je javascript uit en je kunt het formulier ook nogsteeds versturen omdat daat allemaal via de server gebeurt.
+Als ik Javascript uit zet worden de invoervelden natuurlijk ook niet meer opgeslagen en ook niet als ik cookies en daarmee ook localStorage uitzet worden de invoervelden ook niet meer opgeslagen.
+Ook met gebruik van het toetsenbord werkt het invullen van het formulier goed. Door tab te gebruiken kun je van inputveld verwisselen en door de pijltjes toetsen kun je de datum input veranderen en de slider verschuiven.
 
 
+### Firefox
 
-<!-- Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag. -->
+Alles ziet er in eerste instantie het zelfde uit als in Chrome. Alleen op het formulier zien te sliders er raar uit omdat de styling die ik daar op heb toegepast alleen werkt voor Chome.
+Daarom heb ik daar voor ook nog speciale Firefox styles teogevoed die zorgen dat de sliders er het zelfde uit zien als in Chrome.
 
-<!-- Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast -->
+### Android Chrome
 
-<!-- Een lijst met vier browsers waarin je hebt getest:
-voor de desktop 1 Chromium 1 niet-Chromium browser
-voor mobiel 1 iOS + 1 Android OF een Samsung- en een niet-Samsung Android) -->
+### Safari
 
-<!-- een testverslag met
-een beschrijving van de feature-lijst die zijn onderzocht
-welke browsers de feature(s) wel/niet ondersteunen
-welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
-een screenreader test (dit gaan we bij het volgende vak Human Centred Design doen) -->
+### Screenreader test
+
+Als screenrecoder heb ik de gratis app NVDA gebruikt om een test mee te doen. Als je niks doet en je komt op een nieuwe pagina begint hij automatisch 
+te laden van onder naar boven en als je je muis beweegt leest hij voor waar je over heen hovert. <br>
+Hij leest het inlog scherm goed voor. Het enige irritante is dat hij alle HTML properties voorleest die een input veld allemaal bevat. Zo zegt hij bijvoorbeeld 
+bij het veld waar je naam moet komen: "Hoofd inhoud oriëntatiepunt naam student invoerveld vereist ongeldige invoer heeft auto aanvullen naam achternaam leeg".
+Dat is nog al wat informatie. Helaas is daar weinig aan te doen omdat die properties nou éénmaal nodig zijn voor de HTML. <br>
+Het home scherm met de zeven vragen om in te vullen zijn allemaal duidelijk. Hij zeft zelfs als een link al bezocht is door te zeggen "Bezocht link". <br>
+Op het formulier word ook alles goed voorgelezen. Ook hier word aangegeven of een invoerveld vereist is. 
+Het vervelende is wel dat de afbeelding die ik heb gebruikt om een check icoontje weer te geven als een invoerveld is ingevuld ook word gelezen als "afbeelding checked icon" omdat dat ook in de HTML properties staat.
+Dus eigenlijk zo ik het zo moeten maken dat de screen reader deze afbeelding overslaat als hij niet zichtbaar is. Want niet ziende mensen hebben toch ook vrij weinig aan de informatie dat daar een afbeelding staat.
+Vervolgens worden de datum invoervelden zo voorgelezen: "Draai keuze knop klikbaar DD dag, Draai keuze knop klikbaar MM maand, Draai keuze knop klikbaar JJJJ jaar". Helaas is daar ook weinig aan te veranderen omdat nou een maal is hoe ze in elkaar zitten. 
+De slider worden voorgelezen als: "Schuifregelaar" en word ook voorgelezen welke waarde de slider heeft wat ook erg handig is. <br>
+<br>
+Naar aanleiding van de screenreader test heb ik nog titles toegevoed aan invoervelden die dat nog niet hadden zoals de datum zodat het duidelijker is voor mensen die een screen reader gebruiken wat er precies moet worden ingevuld.
 
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+## License 
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-<!-- ☝️ replace this description with a description of your own work -->
+> This repository uses [MIT](https://github.com/mbergevoet/iCOV-redesign/blob/master/LICENSE) license. © Merlijn Bergevoet 2021
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->

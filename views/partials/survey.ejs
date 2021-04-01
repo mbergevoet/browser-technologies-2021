@@ -9,13 +9,13 @@
                 <label for="teacher">Kies je docent</label>
                 <div>
                     <label for="docent">
-                        <input type="radio" class="docent" id="radioOne" name="docent"
+                        <input title="optie één" type="radio" class="docent" id="radioOne" name="docent"
                             value="<%= courseData.teacherOne %>" required>
                         <%= courseData.teacherOne %>
                             <img class="icon" id="iconOne" src="/icons/checked.svg" alt="checked icon">
                     </label>
                     <label for="docent">
-                        <input type="radio" class="docent" id="radioTwo" name="docent"
+                        <input title="optie twee" type="radio" class="docent" id="radioTwo" name="docent"
                             value="<%= courseData.teacherTwo %>" required>
                         <%= courseData.teacherTwo %>
                             <img class="icon" id="iconTwo" src="/icons/checked.svg" alt="checked icon">
@@ -25,18 +25,18 @@
                 <label for="begin-datum">
                     Begin datum
                 </label>
-                <input type="date" id="begindatum" name="begindatum" required>
+                <input title="Voer de begin datum in" type="date" id="begindatum" name="begindatum" required>
                 <img class="icon" id="iconThree" src="/icons/checked.svg" alt="checked icon">
                 <label for="eind-datum">
                     Eind datum
                 </label>
-                <input type="date" id="einddatum" name="einddatum" required>
+                <input title="Voer de eind datum in" type="date" id="einddatum" name="einddatum" required>
                 <img class="icon" id="iconFour" src="/icons/checked.svg" alt="checked icon">
                 <label for="grading">
                     Lesstof
                 </label>
-                <input title="Alleen cijfers 1 tot 10" type="range" id="lesstof" value="" min="1" max="10"
-                    oninput="gradeOnputId1.value = lesstof.value" name="lesstof" step="1" required>
+                <input title="Geef een cijfer van 1 tot 10" type="range" id="lesstof" value="0" min="1" max="10"
+                    oninput="gradeOnputId1.value = lesstof.value" name="lesstof" step="1">
                 <output id="gradeOnputId1" class="lesstof"></output>
                 <img class="icon" id="iconFive" src="/icons/checked.svg" alt="checked icon">
                 <div class="range">
@@ -46,8 +46,8 @@
                 <label for="grading">
                     Uitleg
                 </label>
-                <input title="Alleen cijfers 1 tot 10" type="range" id="uitleg" value="" min="1" max="10"
-                    oninput="gradeOnputId2.value = uitleg.value" name="uitleg" step="1" required>
+                <input title="Geef een cijfer van 1 tot 10" type="range" id="uitleg" value="0" min="1" max="10"
+                    oninput="gradeOnputId2.value = uitleg.value" name="uitleg" step="1">
                 <output id="gradeOnputId2" class="uitleg"></output>
                 <img class="icon" id="iconSix" src="/icons/checked.svg" alt="checked icon">
                 <div class="range">
@@ -57,8 +57,8 @@
                 <label for="grading">
                     Eigen inzicht
                 </label>
-                <input title="Alleen cijfers 1 tot 10" type="range" id="eigeninzicht" value="" min="1" max="10"
-                    oninput="gradeOnputId3.value = eigeninzicht.value" name="eigeninzicht" step="1" required>
+                <input title="Geef een cijfer van 1 tot 10" type="range" id="eigeninzicht" value="0" min="1" max="10"
+                    oninput="gradeOnputId3.value = eigeninzicht.value" name="eigeninzicht" step="1">
                 <output id="gradeOnputId3" class="eigeninzicht"></output>
                 <img class="icon" id="iconSeven" src="/icons/checked.svg" alt="checked icon">
                 <div class="range">
