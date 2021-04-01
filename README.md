@@ -6,12 +6,13 @@
 | --- |
 | Mijn case |
 | Live Demo |
-| De website |
+| Eindproduct |
 | Installatie |
 | Vereisten voor de case |
 | Schetsen & Features |
 | Ontwerp |
-| Terug val plan/ Wireflow |
+| Terug val plan |
+| Wireflow |
 | HTML elementen |
 | Mogelijke Browser Technologies |
 | Browser Technology |
@@ -37,7 +38,7 @@ Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een e
 
 [Link naar live demo](https://minor-web-dev-survey.herokuapp.com/)
 
-## De website
+## Eindproduct
 
 ![Login](https://i.imgur.com/Ge2yDOF.png)
 ![Overzicht](https://i.imgur.com/3A99npM.png)
@@ -116,14 +117,11 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 **Mobiel Ontwerp** <br>
 ![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
 
-## Terug val plan/ Wireflow
+## Terugval plan
 
-<!-- Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag. -->
-### Eerste wireflow plan
 ![Plan](https://i.imgur.com/Q96M0F6.png)
-<!-- Nieuwe wireflow maken!!! -->
 
-### Huidige wireflow
+## Wireflow
 
 ![Plan2](https://i.imgur.com/cUuwMFy.jpg)
 
@@ -279,8 +277,8 @@ Het eerst wat me opvalt is dat er geen datum template is net als op de computer 
 naar de gebruiker. En als tweede valt me op dat je wel de sliders kunt gebruiken om je cijfer in te voeren alleen verschijnen de check icoontjes hier niet bij (zie rechter afbeelding). Ik vermoed dat het te maken heeft met dat het `focusout` event niet goed werkt op sliders specifiek in Androind Chrome.
 Zoals te zien is werken ze wel bij de datum invoervelden maar om één ondere reden niet bij de sliders. Het opslaan van de invoervelden in localStorage werkt ook gewoon zoals het zou moeten dus dat is wel heel goed.  
 
-<img src="https://i.imgur.com/dlclr3l.jpg" width="400" alt="geen datum android chrome">
-<img src="https://i.imgur.com/2fUJvmL.jpg" width="400" alt="geen checked icoontjes android chrome">
+<img src="https://i.imgur.com/dlclr3l.jpg" width="350" alt="geen datum android chrome">
+<img src="https://i.imgur.com/2fUJvmL.jpg" width="350" alt="geen checked icoontjes android chrome">
 
 ### Safari
 
@@ -289,13 +287,13 @@ Daar is helaas niks aan te doen omdat de datum invoervelden gewoon een title heb
 En als laatste lijkt de localStorage te werken voor de radio buttons en de datum invoervelden alleen niet voor de sliders. Er komt geen getalletje te staan achter de slider als de ik de pagina refresh en de slider verplaatst ook niet van plek en blijft gewoon op nul staan. In Android Chrome gebeurt dit allebei wel.
 Het zou ook te maken kunnen hebben met de manier hoe localStorage slider opslaat in Safari. Dat het wel word opgeslagen maar niet getoont kan worden omdat ik een andere manier gebruik.
 
-<img src="https://i.imgur.com/HgPVUHw.jpg" width="400" alt="geen datum safari">
-<img src="https://i.imgur.com/JUru6p0.jpg" width="400" alt="geen check icoontjes safari">
-<img src="https://i.imgur.com/S6RORPL.jpg" width="400" alt="geen localStorage sliders safari">
+<img src="https://i.imgur.com/HgPVUHw.jpg" width="350" alt="geen datum safari">
+<img src="https://i.imgur.com/JUru6p0.jpg" width="350" alt="geen check icoontjes safari">
+<img src="https://i.imgur.com/S6RORPL.jpg" width="350" alt="geen localStorage sliders safari">
 
 ### Screenreader test
 
-Als screenrecoder heb ik de gratis app NVDA gebruikt om een test mee te doen. Als je niks doet en je komt op een nieuwe pagina begint hij automatisch 
+Als screenrecoder heb ik de gratis app [NVDA](https://www.nvaccess.org/) gebruikt om een test mee te doen. Als je niks doet en je komt op een nieuwe pagina begint hij automatisch 
 te laden van onder naar boven en als je je muis beweegt leest hij voor waar je over heen hovert. <br>
 Hij leest het inlog scherm goed voor. Het enige irritante is dat hij alle HTML properties voorleest die een input veld allemaal bevat. Zo zegt hij bijvoorbeeld 
 bij het veld waar je naam moet komen: "Hoofd inhoud oriëntatiepunt naam student invoerveld vereist ongeldige invoer heeft auto aanvullen naam achternaam leeg".
