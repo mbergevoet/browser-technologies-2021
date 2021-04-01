@@ -121,7 +121,7 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 
 ![Plan](https://i.imgur.com/Q96M0F6.png)
 
-## Wireflow
+## :loop: Wireflow
 
 ![Plan2](https://i.imgur.com/cUuwMFy.jpg)
 
