@@ -24,27 +24,27 @@
 | Testverslag |
 
 
-## De eindopdracht ✨ Progressive Enhanced Browser Technologie
+## De eindopdracht Progressive Enhanced Browser Technologie
 
 Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
 
 [De eindopdracht - Progressive Enhanced Browser Technologie](course/Eindopdracht.md)
 
-## Mijn usecase
+## :boy: Mijn usecase
 
 Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een enquete lijkt me leuk. Als het onderwerp anders mag zijn zou ik dat ook graag doen.
 
-## Live Demo
+## :computer: Live Demo
 
 [Link naar live demo](https://minor-web-dev-survey.herokuapp.com/)
 
-## Eindproduct
+## :flower_playing_cards: Eindproduct
 
 ![Login](https://i.imgur.com/Ge2yDOF.png)
 ![Overzicht](https://i.imgur.com/3A99npM.png)
 ![Enquete](https://i.imgur.com/twnF28l.png)
 
-## Installatie
+## :electric_plug: Installatie
 
 Ga naar de juiste map:
 
@@ -70,7 +70,7 @@ Als alle dependencies zijn geïnstalleerd:
 npm run dev
 ```
 
-## Vereisten voor de case
+## :clipboard: Vereisten voor de case
 
 -   Studentgegevens (naam + nummer) verplicht
 
@@ -87,7 +87,7 @@ npm run dev
 
 -   Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
-## Schetsen & Features
+## :notebook: Schetsen & Features
 
 -   Er wordt een verschil gemaakt kunnen worden tussen een admin en een normale gebruiker
 -   De gebruiker kan een vraag een score geven van 1 tot 10
@@ -105,7 +105,7 @@ Dit is het overzicht dat de admin ziet en waar hij een nieuwe vraag kan toevoege
 ![Inlog scherm](https://i.imgur.com/bS5jI0E.jpg)
 Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tussen normale gebruiker en admin. (pleasurable)
 
-## Ontwerp
+## :pencil2: Ontwerp
 
 **Desktop Ontwerp**
 ![Desktop Ontwerp 1](https://i.imgur.com/biETYWH.png)
@@ -117,7 +117,7 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 **Mobiel Ontwerp** <br>
 ![Mobiel Ontwerp](https://i.imgur.com/AIKveSK.png)
 
-## Terugval plan
+## :exclamation: Terugval plan
 
 ![Plan](https://i.imgur.com/Q96M0F6.png)
 
@@ -125,7 +125,7 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 
 ![Plan2](https://i.imgur.com/cUuwMFy.jpg)
 
-## HTML elementen
+## `<html>`elementen
 
 Mogelijke opbouw van de HTML
 
@@ -146,7 +146,7 @@ Mogelijke opbouw van de HTML
 
 ```
 
-## Mogelijke Browser Technologies
+## :microscope: Mogelijke Browser Technologies
 
 -   Web Storage/ Cookies
 -   Templates
@@ -156,11 +156,11 @@ Mogelijke opbouw van de HTML
 -   Forms
 -   Data posting
 
-## Browser Technology
+## :microscope: Browser Technology
 
 Voor mijn case heb ik web storage/ cookies/ localStorage gekozen als browser technology.
 
-## Progressive Enhancements
+## ✨ Progressive Enhancements
 
 <!-- Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast -->
 
@@ -173,7 +173,7 @@ Voor mijn case heb ik web storage/ cookies/ localStorage gekozen als browser tec
 
 Ik zal nu dieper in gaan op de features en in welke layer ze van toepassing zijn.
 
-## Functional layer
+## :cake: Functional layer
 
 ![Enquete Pleasureble](https://i.imgur.com/7KaiEzt.png)
 
@@ -184,7 +184,7 @@ Het mogelijk om in te loggen bij de login pagina. Daarna kun je een enquête kie
 Er is bij het formulier geen validatie of feedback en het formulier staat onoverzichtelijk door elkaar. Na het invullen is het niet meer mogelijk om een enquête te openen. Dat word alleen gecommuniceerd met de gebruiker 
 door dat er staat dat de betreffende enquête al is ingevuld en het nu normale tekst is in plaats van een `<a>` tag. 
 
-## Usable layer
+## :cake: Usable layer
 
 ![Enquete Usable](https://i.imgur.com/uEVKPj8.png)
 
@@ -195,7 +195,7 @@ een mobiele opmaak voor als gebruikers via hun mobiele device de website willen 
 die meer past bij de rest van het ontwerp.
 Na het invullen van een enquête is nu met een minder heldere kleur aan gegeven dat je niet meer op een enquête kunt invullen. De core functionaliteit blijft verder onveranderd natuurlijk.
 
-## Pleasureble layer
+## :cake: Pleasureble layer
 
 ![Enquete Pleasureble](https://i.imgur.com/pE92IWc.png)
 
@@ -203,7 +203,7 @@ In de pleasurable layer komt alles samen en wordt de website niet alleen functio
 waardoor het mogelijk wordt voor de gebruiker om de website compleet te verlaten of de pagina te refreshen. Bij terugkomst staan de ingevulde velden nog steeds vol. Daar nog bij detecteerd het formulier of je daadwerkelijk iets hebt ingevuld 
 en geeft je een check icoontje als het is ingevuld.  
 
-## Feature detection
+## :mag_right: Feature detection
 
 Om te zorgen dat de code die zorgt voor het opslaan van de invoervelden alleen getriggerd word als localStorage daadwerkelijk beschikbaar is voer ik de volgende code uit:
 
@@ -237,7 +237,7 @@ Voor de zekerheid heb ik ook nog een @supports statement in mijn CSS geschreven.
 }
 ```
 
-## Testverslag
+## :pencil: Testverslag
 
 ### Browsers waarin ik ga testen
 
@@ -306,7 +306,7 @@ Vervolgens worden de datum invoervelden zo voorgelezen: "Draai keuze knop klikba
 De slider worden voorgelezen als: "Schuifregelaar" en word ook voorgelezen welke waarde de slider heeft wat ook erg handig is. <br>
 Naar aanleiding van de screenreader test heb ik nog titles toegevoed aan invoervelden die dat nog niet hadden zoals de datum zodat het duidelijker is voor mensen die een screen reader gebruiken wat er precies moet worden ingevuld.
 
-## License 
+## :heavy_check_mark: License 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 > This repository uses [MIT](https://github.com/mbergevoet/iCOV-redesign/blob/master/LICENSE) license. © Merlijn Bergevoet 2021
