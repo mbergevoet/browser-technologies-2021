@@ -1,8 +1,27 @@
 # Browser Technologies @cmda-minor-web 20-21
 
 ## Inhoud
--   [Usecase](##Mijn usecase)
--   [LiveDemo](##Live Demo)
+
+| Inhoud |
+| --- |
+| Mijn case |
+| Live Demo |
+| De website |
+| Installatie |
+| Vereisten voor de case |
+| Schetsen & Features |
+| Ontwerp |
+| Terug val plan/ Wireflow |
+| HTML elementen |
+| Mogelijke Browser Technologies |
+| Browser Technology |
+| Progressive Enhancements |
+| Functional layer |
+| Usable layer |
+| Pleasureble layer |
+| Feature detection |
+| Testverslag |
+
 
 ## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 
@@ -18,7 +37,7 @@ Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een e
 
 [Link naar live demo](https://minor-web-dev-survey.herokuapp.com/)
 
-## Screenshots
+## De website
 
 ![Login](https://i.imgur.com/Ge2yDOF.png)
 ![Overzicht](https://i.imgur.com/3A99npM.png)
@@ -26,13 +45,13 @@ Ik heb gekozen voor Enquete over de minor Web Development. Of in elk geval een e
 
 ## Installatie
 
-Go to the right directory:
+Ga naar de juiste map:
 
 ```
 cd yourDirectory
 ```
 
-Clone repo:
+Clone de repo:
 
 ```
 git clone https://github.com/mbergevoet/browser-technologies-2021.git
@@ -44,7 +63,7 @@ Once cloned:
 npm install
 ```
 
-Once all dependencies are installed:
+Als alle dependencies zijn geïnstalleerd:
 
 ```
 npm run dev
@@ -100,9 +119,13 @@ Dit is het inlog scherm, het enige dat ik kon verzinnen om verschil te maken tus
 ## Terug val plan/ Wireflow
 
 <!-- Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag. -->
-
+### Eerste wireflow plan
 ![Plan](https://i.imgur.com/Q96M0F6.png)
 <!-- Nieuwe wireflow maken!!! -->
+
+### Huidige wireflow
+
+![Plan2](https://i.imgur.com/cUuwMFy.jpg)
 
 ## HTML elementen
 
@@ -150,6 +173,8 @@ Voor mijn case heb ik web storage/ cookies/ localStorage gekozen als browser tec
 - De enquête laat een check icoontje zien als je een invoerveld heb ingevuld.
 - De enquête checkt of je invoervelden hebt ingevuld (behalve de sliders helaas) voor dat je het verstuurd.
 
+Ik zal nu dieper in gaan op de features en in welke layer ze van toepassing zijn.
+
 ## Functional layer
 
 ![Enquete Pleasureble](https://i.imgur.com/7KaiEzt.png)
@@ -176,7 +201,7 @@ Na het invullen van een enquête is nu met een minder heldere kleur aan gegeven 
 
 ![Enquete Pleasureble](https://i.imgur.com/pE92IWc.png)
 
-In de pleasurable layer komt alles samen en wordt de website niet alleen functioneel maar ook gebruikersvriendelijker. Met behulp van localStorage worden de inputs op het formulier van de gebruiker opgeslagen
+In de pleasurable layer komt alles samen en wordt de website niet alleen functioneel maar ook gebruikersvriendelijker. Met behulp van localStorage worden de invoervelden op het formulier van de gebruiker opgeslagen
 waardoor het mogelijk wordt voor de gebruiker om de website compleet te verlaten of de pagina te refreshen. Bij terugkomst staan de ingevulde velden nog steeds vol. Daar nog bij detecteerd het formulier of je daadwerkelijk iets hebt ingevuld 
 en geeft je een check icoontje als het is ingevuld.  
 
@@ -195,7 +220,7 @@ localStorageChecker = function () {
     }
 }
 ```
-Bron: https://gist.github.com/antoine-pous/c73e5a3a3b1e9507597d 
+Check if the localStorage is available - [Bron](https://gist.github.com/antoine-pous/c73e5a3a3b1e9507597d) 
 
 Er word hier een test object weggeschreven in localStorage en ook weer verwijderd, als dat lukt returned de function `true`, als het fout gaat komt het in de catch die vervolgend `false` returned wat betekend dat localStorage niet beschibaar is. <br>
 De function kan je daarna gebruiken om andere code heen en zet ik het in een if statement.
@@ -214,14 +239,14 @@ Voor de zekerheid heb ik ook nog een @supports statement in mijn CSS geschreven.
 }
 ```
 
-## Browsers waarin ik ga testen
+## Testverslag
+
+### Browsers waarin ik ga testen
 
 -   Chrome
 -   Firefox
 -   Android Chrome
 -   Safari
-
-## Testverslag
 
 <!-- een beschrijving van de feature-lijst die zijn onderzocht -->
 
@@ -241,12 +266,32 @@ Ook met gebruik van het toetsenbord werkt het invullen van het formulier goed. D
 
 ### Firefox
 
-Alles ziet er in eerste instantie het zelfde uit als in Chrome. Alleen op het formulier zien te sliders er raar uit omdat de styling die ik daar op heb toegepast alleen werkt voor Chome.
-Daarom heb ik daar voor ook nog speciale Firefox styles teogevoed die zorgen dat de sliders er het zelfde uit zien als in Chrome.
+Alles ziet er in eerste instantie het zelfde uit als in Chrome toen in testte in Firefox. Alleen op het formulier zien te sliders er raar uit omdat de styling die ik daar op heb toegepast alleen werkt voor Chome.
+Daarom heb ik daar voor ook nog speciale Firefox styles toegevoegd die zorgen dat de sliders er het zelfde uit zien als in Chrome. Of bijna het zeldfe wand de hoekjes zijn niet zo afgerond als in Chrom het geval is (zie afbeeling hieronder).
+Voor de andere features als de check icoontjes en de localStorage werken zoals zou moeten net als in Chrome. Het zelfde geld voor wanneer je Javascript uitzet of cookies
+
+![Firefox test](https://i.imgur.com/7tmKzWI.png)
 
 ### Android Chrome
 
+Ik heb de website ook op mijn eigen android telefoon bekeken. Daar zijn er wel wat dingen die me opvielen. De core functionaliteit blijft gelukkig wel werken, je kunt nog steeds alles invullen en versturen en de server houdt bij welke enquêtes je al hebt ingevuld.
+Het eerst wat me opvalt is dat er geen datum template is net als op de computer voor de datum invoervelden (zie linker afbeelding). Waarschijnlijk is dit gewoon iets van Android Chrome. Als je er eenmaal op klikt werkt hij wel gewoon maar het mist toch een stukje feedback
+naar de gebruiker. En als tweede valt me op dat je wel de sliders kunt gebruiken om je cijfer in te voeren alleen verschijnen de check icoontjes hier niet bij (zie rechter afbeelding). Ik vermoed dat het te maken heeft met dat het `focusout` event niet goed werkt op sliders specifiek in Androind Chrome.
+Zoals te zien is werken ze wel bij de datum invoervelden maar om één ondere reden niet bij de sliders. Het opslaan van de invoervelden in localStorage werkt ook gewoon zoals het zou moeten dus dat is wel heel goed.  
+
+<img src="https://i.imgur.com/dlclr3l.jpg" width="400" alt="geen datum android chrome">
+<img src="https://i.imgur.com/2fUJvmL.jpg" width="400" alt="geen checked icoontjes android chrome">
+
 ### Safari
+
+En tenslotte heb ik de website in Safari getest. Daar waren helaas wel wat meer probleempjes. Gelukkig blijft ook hier de core functionaliteit gewoon werken. Als eerste is ook hier de datum preview afwezig en dat zal wel met mobiel te maken hebben vermoed ik dan.
+Daar is helaas niks aan te doen omdat de datum invoervelden gewoon een title hebben maar die komt daar blijkbaar dus niet te staan. Ten tweede is er net als in Android Chrome geen check icoontje te zien als je een slider invoerd. Dit heeft denk ik ook de zelfde reden als in Android Chrome vermoed ik.
+En als laatste lijkt de localStorage te werken voor de radio buttons en de datum invoervelden alleen niet voor de sliders. Er komt geen getalletje te staan achter de slider als de ik de pagina refresh en de slider verplaatst ook niet van plek en blijft gewoon op nul staan. In Android Chrome gebeurt dit allebei wel.
+Het zou ook te maken kunnen hebben met de manier hoe localStorage slider opslaat in Safari. Dat het wel word opgeslagen maar niet getoont kan worden omdat ik een andere manier gebruik.
+
+<img src="https://i.imgur.com/HgPVUHw.jpg" width="400" alt="geen datum safari">
+<img src="https://i.imgur.com/JUru6p0.jpg" width="400" alt="geen check icoontjes safari">
+<img src="https://i.imgur.com/S6RORPL.jpg" width="400" alt="geen localStorage sliders safari">
 
 ### Screenreader test
 
@@ -261,9 +306,7 @@ Het vervelende is wel dat de afbeelding die ik heb gebruikt om een check icoontj
 Dus eigenlijk zo ik het zo moeten maken dat de screen reader deze afbeelding overslaat als hij niet zichtbaar is. Want niet ziende mensen hebben toch ook vrij weinig aan de informatie dat daar een afbeelding staat.
 Vervolgens worden de datum invoervelden zo voorgelezen: "Draai keuze knop klikbaar DD dag, Draai keuze knop klikbaar MM maand, Draai keuze knop klikbaar JJJJ jaar". Helaas is daar ook weinig aan te veranderen omdat nou een maal is hoe ze in elkaar zitten. 
 De slider worden voorgelezen als: "Schuifregelaar" en word ook voorgelezen welke waarde de slider heeft wat ook erg handig is. <br>
-<br>
 Naar aanleiding van de screenreader test heb ik nog titles toegevoed aan invoervelden die dat nog niet hadden zoals de datum zodat het duidelijker is voor mensen die een screen reader gebruiken wat er precies moet worden ingevuld.
-
 
 ## License 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
